@@ -40,4 +40,18 @@ To update versions I can go to https://pypi.org.
 ```bash
 pip install -r requirements.txt 
 ```
+
 -----
+# Create a New *Django* Project and App
+### Create Django Project
+Create a new Django project, with the name `profile_projects` in location `.` (root of project).
+
+```bash
+django-admin.py startproject profiles_project .
+```
+
+It created a new folder called `profiles_project`, and `manage.py` script. 
+
+### Create Django App
+A project can consist of multiple sub applications for different functionalities. 
+
