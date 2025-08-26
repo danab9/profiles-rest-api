@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"  # This maps host port 8000 to container port 8000
+    stdin_open: true    # Keeps STDIN open (like -i flag)
+    tty: true          # Allocates a pseudo-TTY (like -t flag)
+    volumes:
+      - .:/workspace    # This mounts your project files
+    working_dir: /workspace  # This forces it to start in /workspace
