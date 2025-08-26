@@ -12,3 +12,6 @@ source ~/env/bin/activate
 ```bash
 deactivate
 ```
+
+### Cheat Sheet
+https://python-guide.readthedocs.io/en/latest/dev/virtualenvs/
