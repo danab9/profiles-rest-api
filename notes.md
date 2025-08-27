@@ -135,3 +135,4 @@ Best practice - keep all models in the file `profiles_api/models.py`.
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 ```
+
