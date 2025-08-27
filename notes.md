@@ -110,5 +110,28 @@ Make sure you're in the docker container, with python environment activated. The
 python manage.py runserver 0.0.0.0:8000
 ```
 
-<http://127.0.0.1:8000/> in the browser shows:
-![alt text](image.png)
+To stop the server: `CTRL-C`.
+
+--------
+
+## Django Models
+
+See [documentation](https://docs.djangoproject.com/en/1.11/topics/db/models/).
+
+- Model: A Python class that defines your data structure.
+
+- Database Table: The storage location for your data, automatically created from your model.
+
+- Object-Relational Mapper (ORM): The built-in Django feature that translates your model code into database operations (e.g., creating, reading, updating, and deleting records), eliminating the need for manual SQL.
+
+### Creating User Profile Model 
+
+We're overriding the default user model by Django with our own custom model, that allows \
+to **use an email address** instead of the standard username that comes with the default model.
+
+Best practice - keep all models in the file `profiles_api/models.py`.
+
+```python
+from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import PermissionsMixin
+```
